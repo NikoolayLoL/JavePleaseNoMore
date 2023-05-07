@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Car handler</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>Car wizard</h1>
+	<form action="/simple/SaveData">
+		<label for="fname">Brand:</label> 
+		<input type="text" id="brand" name="brand"> 
+		<br>
+		<label for="lname">Model:</label>
+		<input type="text" id="model" name="model"> 
+		<br> 
+		<label for="passengers">Number of Passengers:</label>
+		<input type="number" id="passengers" name="passengers">
+		<br> 
+		<label for="year">Year of Production:</label>
+		<input type="number" id="year" name="year"> 
+		<br> 
+		<label for="fuel_economy">Fuel Economy (L/100km):</label>
+		<input type="number" id="fuel_economy" name="fuel_economy"> 
+		<br> 
+		<label for="color">Color:</label>
+		<input type="text" id="color" name="color">
+		<br> 
+		<label for="transmission">Transmission:</label>
+		<select id="transmission" name="transmission">
+			<option value="manual">Manual</option>
+			<option value="automatic">Automatic</option>
+		</select> 
+		<br>
+		<br> 
+		<input type="submit" value="submit">
+		
+	</form>
+	<br>
+	<button onclick="location.href='ReadData';">Read data</button>
+	<button onclick="location.href='searchData.html';">Search data</button>
+</body>
+</html>
